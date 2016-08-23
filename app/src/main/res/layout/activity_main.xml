@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkRed"
+    android:gravity="center">
+
+    <LinearLayout
+        android:background="@color/darkRed"
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/preview"
+            android:layout_marginLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="45dp"/>
+        <LinearLayout
+            android:layout_width="120dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/music_name"
+                android:textColor="#FFFFFF"
+                android:text="song name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/singer_name"
+                android:textColor="#FFFFFF"
+                android:text="singer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_prev"
+            android:background="@drawable/music_prev"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+        <ImageButton
+            android:id="@+id/btn_play"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/music_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/music_next"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    </LinearLayout>
+</LinearLayout>
